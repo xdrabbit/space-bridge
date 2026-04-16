@@ -1,0 +1,32 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "My Sounds",
+          "summary": "Personal ambient audio skill",
+          "description": "Play your own custom ambient background sounds.",
+          "examplePhrases": [
+            "Alexa, open my sounds",
+            "Alexa, ask my sounds to play rain",
+            "Alexa, next"
+          ]
+        }
+      },
+      "isAvailableWorldwide": false,
+      "distributionMode": "PRIVATE",
+      "category": "MUSIC_AND_AUDIO"
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda"
+        },
+        "interfaces": [
+          { "type": "AUDIO_PLAYER" }
+        ]
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

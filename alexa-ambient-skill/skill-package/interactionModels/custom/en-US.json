@@ -1,0 +1,31 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my sounds",
+      "intents": [
+        { "name": "AMAZON.StopIntent", "samples": [] },
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.PauseIntent", "samples": [] },
+        { "name": "AMAZON.ResumeIntent", "samples": [] },
+        { "name": "AMAZON.NextIntent", "samples": ["next", "next sound", "different one"] },
+        {
+          "name": "PlayIntent",
+          "samples": [
+            "play",
+            "start",
+            "play {SoundName}",
+            "start {SoundName}",
+            "play some {SoundName}",
+            "put on {SoundName}"
+          ],
+          "slots": [
+            {
+              "name": "SoundName",
+              "type": "AMAZON.SearchQuery"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
